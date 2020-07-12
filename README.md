@@ -3,7 +3,7 @@
 A survey form made for freeCodeCamp project submission.
 
 ## Author
-[Joe Fong](kapppa.joe@gmail.com)
+[me](mailto:kapppa.joe@gmail.com)
 
 ## Tech used
 
