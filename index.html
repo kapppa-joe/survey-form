@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Survey form built for freeCodeCamp project">
+        <meta name="author" content="Kapppa Joe">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>freeCodeCamp: Build a Survey Form</title>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- my customize CSS -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Google font -->
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main id="main" class="container mt-2">
+            <h1 id="title">Customer survey</h1>
+            <p id="description">Let us know what do you think about our sushi restaurant!</p>
+            <hr/>
+            <form id="survey-form" action="#">
+               <div class="form-group">
+                    <label id="dropdown-label" for="times-visited">How many times have you visited our sushi restaurant?</label>
+                    <select class="form-control" id="dropdown" name="times-visited" required>
+                        <option value="" selected disabled>Click here to select</option>
+                        <option value="1">This is my first visit!</option>
+                        <option value="2-5">2 ~ 5 times</option>
+                        <option value="6-9">6 ~ 9 times</option>
+                        <option value="over10">10 times or more</option>
+                        <option value="secret">Prefer not to say</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-text">Do you like your sushi with wasabi or not?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="wasabi-pref" id="lots" value="lots">
+                        <label class="form-check-label" name="wasabi-pref" for="lots">Sure, lots of them!</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="wasabi-pref" id="some" value="some">
+                        <label class="form-check-label" name="wasabi-pref" for="some">I'd have some on my sushi</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="wasabi-pref" id="abit" value="abit">
+                        <label class="form-check-label" name="wasabi-pref" for="abit">Just a bit would be fine</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="wasabi-pref" id="no" value="no">
+                        <label class="form-check-label" name="wasabi-pref" for="no">Nah, who want that awful green paste?</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-text">Which of our signature sushi do you like the most?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="favsushi" id="redbean" value="redbean">
+                        <label class="form-check-label" for="redbean">Red Bean Battleship</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="favsushi" id="gummy" value="gummy">
+                        <label class="form-check-label" for="gummy">Cola Gummy Warship</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="favsushi" id="jelly" value="jelly">
+                        <label class="form-check-label" for="jelly">Jelly Cube Gunkan</label>
+                    </div>
+                </div>
+ 
+                <div class="form-group">
+                    <label class="form-text">How will you describe our signature sushi dishes?</label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="adjective" id="amazing" value="amazing">
+                        <label class="form-check-label" for="amazing">Absolutely amazing</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="adjective" id="unique" value="unique">
+                        <label class="form-check-label" for="unique">They look unique do they?</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="adjective" id="delicious" value="delicious">
+                        <label class="form-check-label" for="delicious">De...Delicious, maybe?</label>
+                    </div>
+                </div>                
+
+                </div>
+
+                <div class="form-group">
+                    <label class="form-text" for="comment">Anything you want to tell us about our sushi, our service etc...</label>
+                    <textarea id="comment" class="form-control" placeholder="leave your comments here..." rows=5></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label id="name-label" for="name">Name: </label>
+                        <input type="text" id="name" class="form-control" placeholder="Your name here" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label id="email-label" for="email">Email: </label>
+                        <input type="email" id="email" class="form-control" placeholder="name@domain.com" required>
+                    </div>
+                </div>
+                <div class="form-group form-inline">
+                    <label class="mr-3" id="number-label" for="number">Your age:   </label>
+                    <input class="col-md-1" type="number" id="number" placeholder="0" min=1 max=200>
+                </div>
+                 <input id="submit" type="submit" value="Submit">
+            </form>
+        </main>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+body {
+    background-image: url("sushi.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    background-color: black;
+}
+
+#main {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 1em;
+    padding: 2em;
+}
+
+label:not(.form-check-label) {
+    font-weight: bolder;
+}
